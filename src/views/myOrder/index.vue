@@ -1,6 +1,6 @@
 <template>
     <div>myOrderIndex</div>
-  </template>
+</template>
 <script>
 export default {
   name: 'myOrderIndex'

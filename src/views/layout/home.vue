@@ -1,5 +1,7 @@
 <template>
-  <div>layoutHome</div>
+  <div>
+    layoutHome
+  </div>
 </template>
 <script>
 export default {
