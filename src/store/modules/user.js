@@ -3,10 +3,6 @@ import { getInfo, setInfo } from '@/utils/storage'
 export default {
   namespaced: true,
   state: {
-    // userInfo: {
-    //   token: '',
-    //   userId: ''
-    // },
     userInfo: getInfo()
   },
   mutations: {

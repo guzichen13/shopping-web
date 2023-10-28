@@ -122,7 +122,9 @@ export default {
       this.$store.commit('user/SETUSERINFO', res.data)
       this.$toast('登录成功')
       // 跳转
-      this.$router.push('/home')
+      // this.$router.push('/home')
+      const url = this.$route.query.backUrl || '/home'
+      this.$router.replace(url)
     }
   },
   created () {

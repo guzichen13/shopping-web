@@ -20,3 +20,15 @@ export const setInfo = obj => {
 export const removeInfo = () => {
   localStorage.removeItem(key)
 }
+
+// 搜索历史的key
+const HISTORY_KEY = 'historyList'
+
+export const getHistory = () => {
+  const result = localStorage.getItem(HISTORY_KEY)
+  return result ? JSON.parse(result) : []
+}
+
+export const setHistory = arr => {
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(arr))
+}
